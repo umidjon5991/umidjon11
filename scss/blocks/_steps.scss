@@ -1,0 +1,325 @@
+.section-steps {
+  margin-bottom: 159px;
+  padding-top: 119px;
+  padding-bottom: 107px;
+  padding-left: 85px;
+  padding-right: 85px;
+  border-radius: 10px;
+}
+
+.steps-list {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  @include reset-list;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: -150px;
+    display: inline-block;
+    width: 92%;
+    height: 1px;
+    background-color: #e5ecf4;
+    border: 5px solid #e5ecf4;
+    content: "";
+  }
+}
+
+.steps-item {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 32px;
+  padding-top: 82px;
+
+  &::before {
+    position: absolute;
+    top: -42px;
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    background-color: #fcb72b;
+    background-image: url(./images/mobile-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45px 45px;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.steps-item_second {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 32px;
+  padding-top: 82px;
+
+  &::before {
+    position: absolute;
+    top: -42px;
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    background-color: #fcb72b;
+    border-radius: 50%;
+    background-image: url(./images/moto.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45px 45px;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.steps-item_last {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 32px;
+  padding-top: 82px;
+
+  &::before {
+    position: absolute;
+    top: -42px;
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+    background-color: #fcb72b;
+    border-radius: 50%;
+    background-image: url(./images/001-scooter.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 45px 45px;
+    border-radius: 50%;
+    content: "";
+  }
+}
+
+.steps-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.steps-paragraf {
+  width: 100%;
+  max-width: 350px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+}
+
+@media only screen and (max-width: 768px) {
+  .steps-list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include reset-list;
+    margin-right: 30px;
+
+    // &::before {
+    //   position: absolute;
+    //   top: 200px;
+    //   left: -250px;
+    //   display: inline-block;
+    //   width: 100%;
+    //   height: 1px;
+    //   transform: rotate(90deg);
+    //   background-color: #e5ecf4;
+    //   border: 5px solid #e5ecf4;
+    //   content: "";
+    // }
+  }
+
+  .steps-item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 32px 0;
+    margin-left: 100px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -180px;
+      display: inline-block;
+      width: 95px;
+      height: 95px;
+      background-color: #fcb72b;
+      background-image: url(./images/mobile-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 45px 45px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  .steps-item_second {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 32px 0;
+    margin-left: 100px;
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -180px;
+      display: inline-block;
+      width: 95px;
+      height: 95px;
+      background-color: #fcb72b;
+      border-radius: 50%;
+      background-image: url(./images/moto.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 45px 45px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  .steps-item_last {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px 0;
+    margin-left: 100px;
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      left: -180px;
+      display: inline-block;
+      width: 95px;
+      height: 95px;
+      background-color: #fcb72b;
+      border-radius: 50%;
+      background-image: url(./images/001-scooter.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 45px 45px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .section-steps {
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+  }
+  .steps-list {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @include reset-list;
+    padding: 0;
+
+    // &::before {
+    //   position: absolute;
+    //   top: 200px;
+    //   left: -250px;
+    //   display: inline-block;
+    //   width: 100%;
+    //   height: 1px;
+    //   transform: rotate(90deg);
+    //   background-color: #e5ecf4;
+    //   border: 5px solid #e5ecf4;
+    //   content: "";
+    // }
+  }
+
+  .steps-item {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 32px 0;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: 30%;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-color: #fcb72b;
+      background-image: url(./images/mobile-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 35px 35px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  .steps-item_second {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 32px 0;
+    text-align: center;
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: 30%;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-color: #fcb72b;
+      border-radius: 50%;
+      background-image: url(./images/moto.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 35px 35px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+
+  .steps-item_last {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 30px 0;
+    text-align: center;
+
+    &::before {
+      position: absolute;
+      top: -20px;
+      left: 30%;
+      display: inline-block;
+      width: 56px;
+      height: 56px;
+      background-color: #fcb72b;
+      border-radius: 50%;
+      background-image: url(./images/001-scooter.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 35px 35px;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+}

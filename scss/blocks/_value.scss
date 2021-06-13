@@ -1,0 +1,107 @@
+.value .container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.value__box {
+  margin: 0 auto;
+}
+.value__list {
+  display: flex;
+  text-align: center;
+  @include reset-list;
+  align-items: center;
+}
+.value__title {
+  text-align: center;
+}
+.value__item {
+  width: 100%;
+  max-width: 350px;
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+.value__item + .value__item {
+  margin-left: 32px;
+}
+.tech::after {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-image: url(../images/aboutus/01.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+}
+
+.integrity::after {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-image: url(../images/aboutus/02.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+}
+.community::after {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background-image: url(../images/aboutus/03.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  content: "";
+}
+
+.value__img {
+  border-radius: 50%;
+  margin-bottom: 40px;
+}
+.values__item-heading {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.value__item-paragraf {
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #939caa;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 768px) {
+  .value .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .value__list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    @include reset-list;
+    align-items: center;
+  }
+}

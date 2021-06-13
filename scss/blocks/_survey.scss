@@ -1,0 +1,94 @@
+.survey-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.survey-box {
+  display: flex;
+  justify-content: space-between;
+}
+.survey-box__heading {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  color: #495567;
+}
+.survey-box__span-heading {
+  display: block;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #495567;
+}
+.survey-button-box {
+  margin-bottom: 20px;
+}
+.survey-box__button {
+  position: relative;
+  left: -0;
+  display: block;
+  width: 100%;
+  width: 730px;
+  border: none;
+  padding: 15px;
+  background-color: #f2f2f2;
+
+  margin: 20px auto;
+}
+.survey-box__button:hover {
+  background-color: #fff4df;
+}
+
+.survey-box__button-text {
+  position: absolute;
+
+  z-index: 10;
+  display: none;
+  font-family: Lexend Deca;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+.survey-box__button:active .survey-box__button-text {
+  display: block;
+}
+@media only screen and (max-width: 768px) {
+  .survey-box {
+    flex-direction: column;
+  }
+  .survey-box__button {
+    position: relative;
+    left: -0;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    border: none;
+    padding: 15px;
+    background-color: #f2f2f2;
+
+    margin: 20px auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .survey-box__button {
+    position: relative;
+    left: -0;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border: none;
+    padding: 15px;
+    background-color: #f2f2f2;
+
+    margin: 20px auto;
+  }
+}

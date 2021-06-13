@@ -1,0 +1,48 @@
+.sign-up .container {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+.sign-up {
+  width: 100%;
+  background-image: url(./images/Mask.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 102px 0px 102px 165px;
+}
+.sign-up__title {
+  width: 100%;
+  max-width: 410px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #ffffff;
+}
+.picture-box {
+  margin-left: auto;
+}
+.sign-up__img {
+  margin-left: 5px;
+}
+@media only screen and (max-width: 768px) {
+  .sign-up {
+    padding: 102px 0;
+  }
+  .sign-up .container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .picture-box {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
